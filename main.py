@@ -21,9 +21,7 @@ def getLicense():
     # Create an URL object
     url = 'https://www.faa.gov/data_research/commercial_space_data/licenses/'
     # Create object page
-    start = time.perf_counter()
     page = requests.get(url)
-    request_time = time.perf_counter() - start
 
     # Obtain page's information
     soup = BeautifulSoup(page.text, "html.parser")
@@ -39,7 +37,7 @@ def getLicense():
     # Clearing the Screen
     os.system('clear')
     print(bcolors.WARNING + text2art("Go Starship!"))
-    print(bcolors.OKBLUE + "Request completed in {0:.0f}ms".format(request_time) + ' at ' + current_time + '\n')
+    print(bcolors.OKBLUE + "Request completed in " + str(round(page.elapsed.total_seconds() * 100, 2)) + ' ms' + ' at ' + current_time + '\n')
 
     print(bcolors.HEADER + '-------------- Starship Licenses ----------------\n' + bcolors.ENDC)
 
