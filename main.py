@@ -1,3 +1,4 @@
+import sys
 import time
 import requests
 from bs4 import BeautifulSoup
@@ -34,8 +35,12 @@ def getLicense():
     count1 = 1
     count2 = 1
 
-    # Clearing the Screen
-    os.system('clear')
+    # Clearing the Screen Linux and Windows
+    if os.name == 'posix':
+        os.system('clear')
+    else:
+        os.system('cls')
+
     print(bcolors.WARNING + text2art("Go Starship!"))
     print(bcolors.OKBLUE + "Request completed in " + str(round(page.elapsed.total_seconds() * 100, 2)) + ' ms' + ' at ' + current_time + '\n')
 
