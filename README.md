@@ -9,7 +9,7 @@ The script is designed to retrieve and check the launch licenses that SpaceX has
 Install required packages.
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Run Script.
