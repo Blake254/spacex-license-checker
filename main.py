@@ -40,8 +40,7 @@ def getLicense():
         os.system('clear')
     else:
         os.system('cls')
-
-    print(bcolors.WARNING + text2art("Go Starship!"))
+        
     print(bcolors.OKBLUE + "Request completed in " + str(round(page.elapsed.total_seconds() * 100, 2)) + ' ms' + ' at ' + current_time + '\n')
 
     print(bcolors.HEADER + '-------------- Starship Licenses ----------------\n' + bcolors.ENDC)
