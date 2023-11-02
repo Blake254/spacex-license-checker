@@ -18,13 +18,6 @@ python3 main.py
 ```
 
 
-
-## Screenshot
-
-![Script](https://i.ibb.co/cggNkzg/Screenshot-2023-04-13-at-1-43-42-PM.png)
-
-
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
